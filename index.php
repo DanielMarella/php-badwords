@@ -7,6 +7,9 @@
 </head>
 <body>
     
+<?php
+    echo $nome = 'sto funzionando';
+?>
 
 
 
