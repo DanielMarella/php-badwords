@@ -7,14 +7,14 @@
 </head>
 <body>
     
-    <form action="./server.php" method="GET" >
+    <form action="./server.php" method="POST" >
         <h3>Scrivi delle parole all'interno della text-area</h3>
         <textarea name="paragraph" id="" cols="50" rows="4">
 
         </textarea>
 
         <h4>Scrivi la parola che vuoi censurare</h4>
-        <input type="text" method="GET" name ="wordToCensor">
+        <input type="text" method="POST" name ="wordToCensor">
 
         <button>
             Invia il form
