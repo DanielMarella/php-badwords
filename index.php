@@ -7,11 +7,31 @@
 </head>
 <body>
     
-<?php
-    echo $nome = 'sto funzionando';
-?>
+    <form action="" method="" >
+        <h3>Scrivi delle parole all'interno della text-area</h3>
+        <textarea name="paragraph" id="" cols="50" rows="4">
 
+        </textarea>
+
+        <h4>Scrivi la parola che vuoi censurare</h4>
+        <input type="text" word ="">
+
+        <button>
+            Invia il form
+        </button>
+
+    </form>
 
 
 </body>
 </html>
+
+
+<!-- 
+
+Descrizione:
+Creare un form PHP che permetta di inviare due campi: un paragrafo ed una parola da censurare.
+Gestire il tutto con due file diversi. Il primo file dovrà permettere all’utente di inserire i dati e inviare la richiesta al server.
+Il secondo file riceverà la richiesta ed eseguirà queste operazioni:
+stampare a schermo il paragrafo e la sua lunghezza
+stampare di nuovo il paragrafo e la sua lunghezza, dopo aver sostituito con tre asterischi tutte le occorrenze della parola da censurare -->
