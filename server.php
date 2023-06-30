@@ -2,7 +2,9 @@
 
 $paragraph = $_GET ['paragraph'];
 
-$censoredWord = $_GET ['wordToCensor'];
+$wordToCensor = $_GET ['wordToCensor'];
+
+$censoredParagraph = str_replace($wordToCensor, '***', $paragraph);
 
 ?>
 
@@ -15,10 +17,15 @@ $censoredWord = $_GET ['wordToCensor'];
 </head>
 <body>
         <?php 
-        
-        echo "<h4>Paragrafo: &darr; </h4>";
+        echo "<h4>Paragrafo originale: &darr; </h4>";
         echo  "<p>$paragraph;</p>";
         echo "<p> La lunghezza del paragrafo è: " . strlen($paragraph) . "</p>";
+        ?>
+
+        <?php
+        echo "<h4>Paragrafo censurato : &darr; </h4>";
+        echo "<p> $censoredParagraph </p>";
+        echo "<p>La lunghezza del paragrafo censurato è: " . strlen($censoredParagraph) . "</p>"
         ?>
 
 </body>
